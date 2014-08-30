@@ -1,0 +1,19 @@
+default: &default
+  port: 27017  
+  username: guest
+  password: guest
+  db: apollo-crawler
+
+development:
+  <<: *default
+  db: apollo-crawler-development
+
+test:
+  <<: *default
+  host: apollo-crawler.no-ip.org
+  db: apollo-crawler-test
+
+production:
+  <<: *default
+  host: apollo-crawler.no-ip.org
+  db: apollo-crawler-production

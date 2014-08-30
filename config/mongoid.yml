@@ -1,0 +1,23 @@
+default:
+  sessions:
+    default:
+      hosts:
+        - apollo-crawler.no-ip.org:27017
+development:
+  sessions:
+    default:
+      hosts:
+        - localhost:27017
+      database: apollo-crawler-development
+test:
+  sessions:
+    default:
+      hosts:
+        - apollo-crawler.no-ip.org:27017
+      database: apollo-crawler-test
+production:
+  sessions:
+    default:
+      hosts:
+        - apollo-crawler.no-ip.org:27017
+      database: apollo-crawler-production
